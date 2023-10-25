@@ -159,7 +159,26 @@ const cn = {
       Title: "用户输入预处理",
       SubTitle: "用户最新的一条消息会填充到此模板",
     },
-
+    VoiceOn: {
+      Title: "开启神之嘴",
+      SubTitle: "开启后每次对话结束会用在线TTS发声",
+    },
+    VoiceCharacter: {
+      Title: "Bot神之嘴名字",
+      SubTitle: "直接输入角色名。",
+    },
+    VoiceNoise: {
+      Title: "感情",
+      SubTitle: "控制感情变化程度，默认为0.5",
+    },
+    VoiceSdp_ratio: {
+      Title: "SDP/DP混合比",
+      SubTitle: "SDP在合成时的占比，理论上此比率越高，合成的语音语调方差越大",
+    },
+    VoiceNoisew: {
+      Title: "音素长度",
+      SubTitle: "控制音节发音长度变化程度，默认为0.9",
+    },
     Update: {
       Version: (x: string) => `当前版本：${x}`,
       IsLatest: "已是最新版本",

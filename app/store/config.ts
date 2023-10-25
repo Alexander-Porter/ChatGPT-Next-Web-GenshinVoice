@@ -57,6 +57,11 @@ export const DEFAULT_CONFIG = {
     compressMessageLengthThreshold: 1000,
     enableInjectSystemPrompts: true,
     template: DEFAULT_INPUT_TEMPLATE,
+    VoiceNoise: 0.5,
+    VoiceSdp_ratio: 0.2,
+    VoiceNoisew: 0.9,
+    vc: "枫原万叶",
+    enableVoice: false,
   },
 };
 
@@ -95,6 +100,15 @@ export const ModalConfigValidator = {
   },
   top_p(x: number) {
     return limitNumber(x, 0, 1, 1);
+  },
+  noise(x: number) {
+    return limitNumber(x, 0, 1, 0.2);
+  },
+  VoiceSdp_ratio(x: number) {
+    return limitNumber(x, 0, 1, 0.2);
+  },
+  VoiceNoisew(x: number) {
+    return limitNumber(x, 0, 1.5, 0.9);
   },
 };
 
